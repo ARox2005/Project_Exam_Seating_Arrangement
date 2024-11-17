@@ -3,7 +3,7 @@ import math
 from collections import defaultdict
 
 # Input Excel file with sheets
-input_excel_path = "input_excel_worksheet.xlsx"
+input_excel_path = "input_excel_workbook.xlsx"
 
 # Output file paths
 op_1_path_csv = "op_1.csv"
