@@ -22,6 +22,13 @@ This project automates the process of generating seating arrangements for exams 
 - **Error Handling**:
   - Raises an alert if the number of students exceeds the total available capacity.
 
+### **Attendance Sheet Generator**
+- Generates attendance sheets based on the seating arrangement, including:
+  - Roll numbers, names, and space for student signatures.
+  - Space for invigilator and teaching assistant (TA) signatures.
+
+- Saves the attendance sheet in Excel format with placeholder rows for invigilator and TA signatures.
+
 ### **Outputs**
 1. **Seating Arrangement (op_1)**:
    - Contains columns: `Date`, `Day`, `Room`, `Allocated_students_count`, `Morning`, `Evening`, and `Roll_list` (with roll numbers of students separated by semicolons).
@@ -69,6 +76,10 @@ The program processes an Excel file with the following sheets:
      - `Block`: Building of the room (e.g., `9`, `LT`).
      - `Vacant`: Remaining seats in the room after allocation.
 
+3. **Attendance Sheet**:
+   - Includes:
+     - Roll numbers, names, and space for student signatures.
+     - Additional placeholder rows for invigilator and TA signatures.
 
 ---
 
@@ -128,4 +139,4 @@ The program processes an Excel file with the following sheets:
 
 ---
 
-**End of description**
+**End of Description**
