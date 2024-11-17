@@ -12,7 +12,16 @@ op_excel_path = "output.xlsx"
 
 # Parameters
 buffer_size = 5  # Adjustable buffer per room
-dense_mode = True  # Dense if True, Sparse otherwise
+print("Enter mode of allocation : ")
+print("1. Dense Allocation")
+print("2. Sparse Allocation")
+dense_mode = int(input(": "))  # Dense if True, Sparse otherwise
+if dense_mode == 1:
+  dense_mode = True
+elif dense_mode == 2:
+  dense_mode = False
+else:
+  print("Invalid input")
 
 # Load Excel sheets
 excel_data = pd.ExcelFile(input_excel_path)
