@@ -4,12 +4,12 @@ import subprocess
 from collections import defaultdict
 
 # Input Excel file with sheets
-input_excel_path = "/content/drive/MyDrive/Colab Notebooks/Lab_9_resources/2024 Python Project Part 1. Group of two.xlsx"
+input_excel_path = "Example_input_excel_workbook.xlsx"
 
 # Output file paths
-op_1_path_csv = "/content/drive/MyDrive/Colab Notebooks/Lab_9_resources/op_1.csv"
-op_2_path_csv = "/content/drive/MyDrive/Colab Notebooks/Lab_9_resources/op_2.csv"
-op_excel_path = "/content/drive/MyDrive/Colab Notebooks/Lab_9_resources/output.xlsx"
+op_1_path_csv = "op_1.csv"
+op_2_path_csv = "op_2.csv"
+op_excel_path = "output.xlsx"
 
 # Parameters
 buffer_size = 5  # Adjustable buffer per room
