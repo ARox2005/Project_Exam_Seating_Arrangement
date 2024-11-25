@@ -6,6 +6,12 @@ from collections import defaultdict
 # Input Excel file with sheets
 input_excel_path = "Example_input_excel_workbook.xlsx"
 
+# Output intermediate CSV paths
+ip_1_path = "ip_1.csv"
+ip_2_path = "ip_2.csv"
+ip_3_path = "ip_3.csv"
+ip_4_path = "ip_4.csv"
+
 # Output file paths
 op_1_path_csv = "op_1.csv"
 op_2_path_csv = "op_2.csv"
@@ -30,6 +36,11 @@ ip_1 = excel_data.parse("ip_1", skiprows=1)
 ip_2 = excel_data.parse("ip_2", skiprows=1)
 ip_3 = excel_data.parse("ip_3")
 ip_4 = excel_data.parse("ip_4")
+
+ip_1.to_csv(ip_1_path, sep=";", index=False)
+ip_2.to_csv(ip_2_path, sep=";", index=False)
+ip_3.to_csv(ip_3_path, sep=";", index=False)
+ip_4.to_csv(ip_4_path, sep=";", index=False)
 
 # Prepare input data
 ip_1["rollno"] = ip_1["rollno"].astype(str)
